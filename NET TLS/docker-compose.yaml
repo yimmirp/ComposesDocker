@@ -24,8 +24,9 @@ letsencrypt:
 appnet:
     image: 201503470/mscampdavid
     restart: always
-    expose: "80"
+    expose: 
+        - "80"
     environment:
-        - VIRTUAL_HOST: apiyouth.yimmirp.xyz
-        - LETSENCRYPT_HOST: apiyouth.yimmirp.xyz
-        - LETSENCRYPT_EMAIL: yimmiss305@gmail.com
+        - VIRTUAL_HOST= apiyouth.yimmirp.xyz
+        - LETSENCRYPT_HOST= apiyouth.yimmirp.xyz
+        - LETSENCRYPT_EMAIL= yimmiss305@gmail.com
